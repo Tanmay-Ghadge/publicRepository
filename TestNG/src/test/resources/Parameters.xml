@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="parameters">
+	<parameter name="browserName" value="edge" />
+	<parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" />
+	<parameter name="username" value="Admin"/>
+	<parameter name="password" value="admin123"/>
+	<parameter name="value" value="120"/>
+	
+	<test name="test-Parameters">
+		 <classes>
+			<class name="com.testng.Parameters1">
+				<methods>
+					
+					<include name="para"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

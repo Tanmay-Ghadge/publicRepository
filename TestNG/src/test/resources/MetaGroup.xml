@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="meta groups">
+	<test name="meta group">
+		< groups>
+			<define name="esentials">
+				<include name="smoke" />
+				<include name="functional" />
+				<include name="regression" />
+			</define>
+
+			<define name="builds">
+				<include name="daily build" />
+				<include name="weekly build" />
+			</define>
+
+			<run>
+				<include name="builds" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.testng.Grouping" />
+			<class name="com.testng.Grouping2" />
+		</classes>
+	</test>
+</suite>

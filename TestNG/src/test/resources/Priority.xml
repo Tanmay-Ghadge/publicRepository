@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="prioity">
+	<test name="all tc execution without include">
+		<classes>
+			<class name="com.testng.Priority">
+				<methods>
+					<include name="iurdgwoebju" />
+					<include name="kahvchik" />
+					<include name="jgvjhdz" />
+					<include name="kvhcaskjs" />
+					<include name="bkjcsjbvkjv" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+

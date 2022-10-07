@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [parameters]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="admin123"/>
+  <parameter name="browserName" value="edge"/>
+  <parameter name="value" value="120"/>
+  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+  <parameter name="username" value="Admin"/>
+  <test thread-count="5" name="test-Parameters(failed)">
+    <classes>
+      <class name="com.testng.Parameters1">
+        <methods>
+          <include name="verifyMyInfo"/>
+        </methods>
+      </class> <!-- com.testng.Parameters1 -->
+    </classes>
+  </test> <!-- test-Parameters(failed) -->
+</suite> <!-- Failed suite [parameters] -->
